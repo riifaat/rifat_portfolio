@@ -1427,4 +1427,20 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     margin-bottom: 60px !important;
 }
 
+/* Set default size for all SVGs */
+.icon img {
+    width: 24px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+}
+
+/* Set color for Experience SVGs */
+.service-box-item .resume_list .icon img[src*='case-2.svg'] {
+    filter: invert(39%) sepia(77%) saturate(5103%) hue-rotate(0deg) brightness(93%) contrast(90%);
+}
+
+/* Set color for Education SVGs */
+.service-box-item .resume_list .icon img[src*='degree.svg'] {
+    filter: invert(33%) sepia(90%) saturate(3530%) hue-rotate(233deg) brightness(92%) contrast(89%);
+}
 
