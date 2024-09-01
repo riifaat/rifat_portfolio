@@ -261,6 +261,10 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 .service-box-item:hover .service-box-item-content h4{
     color: var(--light-purple-color);
 }
+
+.service-box-item:hover .service-box-item-content h3{
+    color: var(--light-purple-color);
+}
 .service-box-item figure{
     width: 130px;
     height: 130px;
@@ -286,6 +290,12 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     color: var(--primary-color);
     font-weight: 700;
 }
+.service-box-item-content h3{
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 .service-box-item-content p{
     font-size: 18px;
     line-height: 28px;
@@ -1429,7 +1439,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 
 /* Set default size for all SVGs */
 .icon img {
-    width: 24px; /* Adjust size as needed */
+    width: 34px; /* Adjust size as needed */
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
 }
@@ -1442,5 +1452,49 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
 /* Set color for Education SVGs */
 .service-box-item .resume_list .icon img[src*='degree.svg'] {
     filter: invert(33%) sepia(90%) saturate(3530%) hue-rotate(233deg) brightness(92%) contrast(89%);
+}
+
+/* test */
+/* Flexbox alignment for list items */
+.resume_list .list_inner {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    margin-bottom: 20px; /* Space between items */
+}
+
+.resume_list .icon {
+    margin-right: 15px; /* Space between icon and text */
+}
+
+.resume_list .resume_title {
+    flex: 1; /* Allow the title to take the remaining space */
+}
+
+.resume_list h3 {
+    margin: 0; /* Remove default margin for better alignment */
+    font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.resume_list .company {
+    display: block;
+    color: #666;
+    font-size: 1.2rem; /* Optional: color for the company name */
+}
+
+.resume_list .text {
+    margin-top: -20px; /* Space between title and description */
+    color: #333; /* Text color */
+    font-size: 1rem; /* Font size */
+    line-height: 1.2; /* Adjust line height for reduced line spacing */
+}
+
+/* Center the section titles */
+.service-box-item .title {
+    text-align: center; /* Center the title text */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.service-box-item .title h3 {
+    margin: 0; /* Remove default margin for better alignment */
 }
 
