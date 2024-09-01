@@ -1102,3 +1102,52 @@
         top: 0;
     }  
 }
+
+/* test */
+@media (max-width: 1199px) {
+    .service-box-item .resume_list .icon {
+        margin-right: 10px; /* Reduced margin for medium screens */
+    }
+}
+
+@media (max-width: 991px) {
+    .resume_list .list_inner {
+        flex-direction: column; /* Stack icon and text vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    
+    .resume_list .icon {
+        margin-bottom: 5px; /* Space between icon and text */
+        margin-right: 0; /* Removed right margin */
+    }
+    
+    .resume_list .resume_title {
+        text-align: left; /* Align text to the left */
+    }
+}
+
+@media (max-width: 767px) {
+    .resume_list h3 {
+        font-size: 1rem; /* Reduced font size for headings */
+    }
+    
+    .resume_list .company {
+        font-size: 1rem; /* Reduced font size for company names */
+    }
+    
+    .resume_list .text {
+        font-size: 0.9rem;
+        text-align: left /* Reduced font size for text */
+    }
+    
+    .service-box-item {
+        margin-bottom: 30px; /* Adjusted spacing between items */
+    }
+}
+
+@media (max-width: 575px) {
+    .resume_list .text {
+        font-size: 0.8rem;
+        text-align: left /* Further reduced font size for very small screens */
+    }
+}
